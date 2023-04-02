@@ -1,13 +1,14 @@
 import "./App.css";
-import SignIn from "./outils/signIn/signIn";
-import AddData from "./outils/FireBase-Helper/database";
-import {Route,Routes,useNavigate}from "react-router-dom"
-
+import { Route, Routes } from "react-router-dom";
+import { useState } from "react";
+import Artiste from "./componant/pierre de maere";
 function App() {
+  const [affiche, setAffiche] = useState(false);
   return (
     <div className="App">
-      <SignIn />
-      <AddData />
+      <Routes>
+        <Route path="/" element={<Artiste />} />
+      </Routes>
     </div>
   );
 }
