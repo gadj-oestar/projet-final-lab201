@@ -3,8 +3,8 @@ import React from "react";
 import logo from "../../img/Logo idea pierre de maere.png";
 import connexion from "../../img/connexion1.png";
 import pngegg from "../../img/pp2.png";
-import rectangle from "../../img/Rectangle 5.png";
-import rectangle1 from "../../img/Rectangle 6.png";
+import rectangle from "../../img/Versionbasique.png";
+import rectangle1 from "../../img/VersionDeluxe.png";
 import poster from "../../img/PosterVioletFINALE.png";
 import pull from "../../img/Purple Hoodie Back.png";
 import pull1 from "../../img/Purple Hoodie Front.png";
@@ -17,13 +17,18 @@ import youtube from "../../img/youtube.png";
 import maere from "../../img/Logo Noir.png";
 import video from "../../img/video.gif";
 import { Link } from "react-router-dom";
+import tik from "../../img/tiktok.png";
 
-import Identification from "../../identification/identification";
 import Panier from "../../panier/panier";
+import Identification from "../../identifiant/Identifiant";
 
 const Artiste = () => {
   const open_cart = () => {
     document.querySelector(".panier").style.display = "block";
+    document.querySelector(".dark").style.display = "block";
+  };
+  const open = () => {
+    document.querySelector(".id").style.display = "block";
     document.querySelector(".dark").style.display = "block";
   };
 
@@ -36,9 +41,12 @@ const Artiste = () => {
             <img src={logo} alt="/" />
           </figure>
           <article className="logo">
+            <div className="dark" />
+
             <figure>
-              <img src={connexion} alt="" />
+              <img src={connexion} alt="" onClick={open} />
             </figure>
+            <Identification />
 
             <figure>
               <img src={pngegg} alt="" onClick={open_cart} />
@@ -80,7 +88,7 @@ const Artiste = () => {
                 <span>standard</span>
               </article>
               <article className="spane">
-                <span>14,99$</span>
+                <span>14,99€</span>
                 <button>Ajouter au panier</button>
               </article>
             </article>
@@ -93,7 +101,7 @@ const Artiste = () => {
                 <span className="limité"> limitée</span>
               </article>
               <article className="spane">
-                <span>19,99$</span>
+                <span>19,99€</span>
                 <button>Ajouter au panier</button>
               </article>
             </article>
@@ -157,7 +165,7 @@ const Artiste = () => {
                 <img src={rectangle} alt="" />
               </figure>
               <figure className="six">
-                <img src={rectangle1} alt="" />
+                <img src={rectangle} alt="" />
               </figure>
             </article>
             <section className="mini-shop">
@@ -175,7 +183,7 @@ const Artiste = () => {
                   Pack 1 Hoodie spécial <br />
                   tournée + 1 Cd
                 </p>
-                <span> 34,99$</span>
+                <span> 34,99€</span>
               </article>
               <article className="mini-vetement2">
                 <figure className="nine">
@@ -191,13 +199,15 @@ const Artiste = () => {
                   Pack 1 Hoodie spécial <br />
                   “Regarde-Moi” + 1 Cd
                 </p>
-                <span> 34,99$</span>
+                <span> 34,99€</span>
               </article>
             </section>
           </section>
           <section className="bloc-2">
-            <h1>Pack 2 Hoodies + 2 Cd</h1>
-            <span>64,99$</span>
+            <h1>
+              Pack 2 Hoodies + 2 <br /> Cd
+            </h1>
+            <span>64,99€</span>
             <article className="case">
               <div>
                 <p>XS</p>
@@ -248,11 +258,15 @@ const Artiste = () => {
               <img src={twitter} alt="image" />
             </Link>
             <img src={facebook} alt="image" />
+            
+            <img src={tik} alt="" />
+          
           </figure>
         </article>
         <figure className="logo-footer">
           <img src={maere} alt="" />
         </figure>
+
         <p className="foot">
           © 2023 Store Officiel Pierre de Maere. Tous Droits Réservés.
         </p>

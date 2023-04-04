@@ -16,6 +16,8 @@
 
 }
 
+
+
 .reseau figure {
     margin-top: -30px;
 }
@@ -31,23 +33,26 @@
 .bottom {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    padding: 30px;
-    font-size: 0.8rem;
+    justify-content: space-around;
+    font-size: 0.6rem;
 }
 
 .bottom li {
     list-style-type: none;
+    padding: 0;
 }
 
 
 .foot {
     text-align: center;
+    font-size: 0.7rem;
+    margin-bottom: 80px;
 }
 
 @media screen and (max-width:600px) {
-    .line{
-        margin-top: 900px;;
+    .line {
+        margin-top: 900px;
+        ;
     }
-    
+
 }
