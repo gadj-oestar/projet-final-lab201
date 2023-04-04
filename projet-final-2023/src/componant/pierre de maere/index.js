@@ -20,6 +20,7 @@ import { Link } from "react-router-dom";
 import tik from "../../img/tiktok.png";
 import disque from "../../img/ribbon_roll_pierredemaere.png";
 import disque1 from "../../img/ribbon_roll_PierredemaereDeluxe.png";
+import { useState, useEffect } from "react";
 
 import Panier from "../../panier/panier";
 import Identification from "../../identifiant/Identifiant";
@@ -32,6 +33,49 @@ const Artiste = () => {
   const open = () => {
     document.querySelector(".id").style.display = "block";
     document.querySelector(".dark").style.display = "block";
+  };
+  const [box, setBox] = useState(true);
+  const [box1, setBox1] = useState(false);
+  const [box2, setBox2] = useState(false);
+  const [box3, setBox3] = useState(false);
+  const [box4, setBox4] = useState(false);
+
+ 
+
+  const check = () => {
+    setBox(true);
+    setBox1(false);
+    setBox2(false);
+    setBox3(false);
+    setBox4(false);
+  };
+  const check1 = () => {
+    setBox(false);
+    setBox1(true);
+    setBox2(false);
+    setBox3(false);
+    setBox4(false);
+  };
+  const check2 = () => {
+    setBox(false);
+    setBox1(false);
+    setBox2(true);
+    setBox3(false);
+    setBox4(false);
+  };
+  const check3 = () => {
+    setBox(false);
+    setBox1(false);
+    setBox2(false);
+    setBox3(true);
+    setBox4(false);
+  };
+  const check4 = () => {
+    setBox(false);
+    setBox1(false);
+    setBox2(false);
+    setBox3(false);
+    setBox4(true);
   };
 
   return (
@@ -214,20 +258,38 @@ const Artiste = () => {
             <h1>Pack 2 Hoodies + 2 Cd</h1>
             <span>64,99€</span>
             <article className="case">
-              <div>
-                <p>XS</p>
+              <div onClick={check} style={box ? { background: "black" } : null}>
+                <p style={!box ? null : { color: "white" }}>XS</p>
               </div>
-              <div>
-                <p className="police">S</p>
+              <div
+                onClick={check1}
+                style={box1 ? { background: "black" } : null}
+              >
+                <p className="police" style={!box1 ? null : { color: "white" }}>
+                  S
+                </p>
               </div>
-              <div>
-                <p className="police">M</p>
+              <div
+                onClick={check2}
+                style={box2 ? { background: "black" } : null}
+              >
+                <p className="police" style={!box2 ? null : { color: "white" }}>
+                  M
+                </p>
               </div>
-              <div>
-                <p className="police">L</p>
+              <div
+                onClick={check3}
+                style={box3 ? { background: "black" } : null}
+              >
+                <p className="police" style={!box3 ? null : { color: "white" }}>
+                  L
+                </p>
               </div>
-              <div>
-                <p>XL</p>
+              <div
+                onClick={check4}
+                style={box4 ? { background: "black" } : null}
+              >
+                <p style={!box4 ? null : { color: "white" }}>XL</p>
               </div>
             </article>
             <button>Ajouter au panier</button>
