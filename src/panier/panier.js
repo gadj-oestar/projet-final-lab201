@@ -14,7 +14,7 @@ const Panier = () => {
   return (
     <section className="panier">
       <figure>
-        <img src={suprrimer} onClick={close} />
+        <img src={suprrimer} onClick={close} alt="/" />
       </figure>
       <h1> Ton panier</h1>
       <p> votre panier est actuellement vide</p>

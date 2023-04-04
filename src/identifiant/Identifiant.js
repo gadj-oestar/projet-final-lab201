@@ -13,7 +13,7 @@ const Identification = () => {
   return (
     <section className="id">
       <figure className="clic">
-        <img src={suprrimer} onClick={close} />
+        <img src={suprrimer} onClick={close}  alt="/"/>
       </figure>
       <article className=" connexion">
         <form>

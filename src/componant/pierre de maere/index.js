@@ -13,14 +13,13 @@ import pull3 from "../../img/Orange Hoodie Front.png";
 import instagram from "../../img/instagram.png";
 import facebook from "../../img/facebook.png";
 import twitter from "../../img/twitter.png";
-import youtube from "../../img/youtube.png";
 import maere from "../../img/Logo Noir.png";
 import video from "../../img/video.gif";
 import { Link } from "react-router-dom";
 import tik from "../../img/tiktok.png";
 import disque from "../../img/ribbon_roll_pierredemaere.png";
 import disque1 from "../../img/ribbon_roll_PierredemaereDeluxe.png";
-import { useState, useEffect } from "react";
+import { useState } from "react";
 
 import Panier from "../../panier/panier";
 import Identification from "../../identifiant/Identifiant";
@@ -301,7 +300,7 @@ const Artiste = () => {
           </section>
         </section>
         <section className="musique">
-          <iframe src="https://open.spotify.com/embed/artist/13mm5rU1jvWfWG6uQ46ypd?utm_source=generator&theme=0"></iframe>
+          <iframe src="https://open.spotify.com/embed/artist/13mm5rU1jvWfWG6uQ46ypd?utm_source=generator&theme=0" title="/"></iframe>
         </section>
         <section className="inscription">
           <h2>Newsletter</h2>
@@ -315,14 +314,14 @@ const Artiste = () => {
         <article className="reseau">
           <figure>
             <Link to="https://www.instagram.com/pierredemaere/#">
-              <img src={instagram} alt="image" />
+              <img src={instagram} alt="/" />
             </Link>
 
             <Link to="https://twitter.com/iamdonmcqueen?s=20">
               {" "}
-              <img src={twitter} alt="image" />
+              <img src={twitter} alt="/" />
             </Link>
-            <img src={facebook} alt="image" />
+            <img src={facebook} alt="/" />
 
             <img src={tik} alt="" />
           </figure>
