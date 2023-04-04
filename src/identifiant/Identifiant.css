@@ -1,0 +1,98 @@
+.id {
+    position: absolute;
+    z-index: 10000;
+    margin-top: 100px;
+    width: 109%;
+    margin-left: -100%;
+    height: 50vh;
+    display: none;
+}
+
+.id figure img {
+
+    position: absolute;
+    z-index: 200000000;
+    top: 8%;
+    left: 39%;
+    width: 1000%;
+}
+
+.connexion form {
+    display: flex;
+    flex-direction: column;
+
+    background-color: rgb(75, 73, 73);
+    border-radius: 20px;
+    margin-top: 10px;
+    width: 30%;
+    margin-left: 540px;
+    margin-right: auto;
+    height: 53vh;
+}
+
+
+input[type="password"] {
+
+    background: #D9D9D9;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.05);
+    border-radius: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+    padding: 10px;
+    margin-bottom: 15px;
+
+}
+
+.email {
+
+    background: #D9D9D9 !important;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.05);
+    border-radius: 15px;
+    width: 70% !important;
+    padding: 10px;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    margin-bottom: 15px;
+    margin-left: -300Px;
+    margin-bottom: 30px !important;
+
+}
+
+h3:first-child {
+    font-size: 1.9rem !important;
+    margin-top: 20px;
+    margin-bottom: -10px;
+}
+
+form button {
+    width: 50%;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    background-color: #C88BD2;
+    color: aliceblue;
+    font-size: 1.4rem;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0px;
+}
+
+.spanee {
+    font-weight: bold;
+    margin-top: 0px;
+    text-align: center;
+    margin-left: 20px;
+}
+
+.dark {
+    position: absolute;
+    display: none;
+    top: 100%;
+    width: 100%;
+    height: 100vh;
+    z-index: 99;
+    opacity: 0.7;
+    background-color: black;
+    animation: slide-left 0.3s;
+}

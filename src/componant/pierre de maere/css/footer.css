@@ -1,0 +1,70 @@
+.line {
+    border-bottom: 1px solid #D9D9D9;
+    margin-top: 1140px;
+    width: 90%;
+    margin-bottom: 50Px;
+    margin-left: 100Px;
+    margin-right: auto;
+    height: 1vh;
+}
+
+
+.reseau figure img {
+    width: 49.79px;
+    height: 44.79px;
+    margin: 10px;
+
+}
+
+
+
+.reseau figure {
+    margin-top: -30px;
+}
+
+.logo-footer img {
+    width: 228px;
+    height: 229px;
+    margin-top: -30px;
+    margin-bottom: -30px;
+
+}
+
+.bottom {
+    display: flex;
+    flex-direction: row;
+    font-size: 0.6rem;
+    justify-content: space-around;
+    padding: 320px;
+    margin-top: -330px;
+
+
+}
+
+footer{
+    padding-top: 160px;
+}
+
+.bottom li {
+    list-style-type: none;
+    padding: 0;
+}
+
+
+.foot {
+    text-align: center;
+    font-size: 0.7rem;
+    margin-bottom: 80px;
+}
+
+@media screen and (max-width:600px) {
+    .line {
+        margin-top: 900px;
+    }
+
+    .bottom {
+        margin-top: -300px;
+    }
+
+
+}
