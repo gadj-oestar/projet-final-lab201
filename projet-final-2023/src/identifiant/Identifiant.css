@@ -1,7 +1,6 @@
 .id {
     position: absolute;
     z-index: 10000;
-    background-color: rgb(0, 0, 0);
     margin-top: 100px;
     width: 109%;
     margin-left: -100%;
@@ -13,7 +12,7 @@
 
     position: absolute;
     z-index: 200000000;
-    top: -7%;
+    top: 8%;
     left: 39%;
     width: 1000%;
 }
@@ -24,7 +23,7 @@
 
     background-color: rgb(75, 73, 73);
     border-radius: 20px;
-    margin-top: -40px;
+    margin-top: 10px;
     width: 30%;
     margin-left: 540px;
     margin-right: auto;

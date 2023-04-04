@@ -3,8 +3,8 @@ import React from "react";
 import logo from "../../img/Logo idea pierre de maere.png";
 import connexion from "../../img/connexion1.png";
 import pngegg from "../../img/pp2.png";
-import rectangle from "../../img/Versionbasique.png";
-import rectangle1 from "../../img/VersionDeluxe.png";
+import rectangle from "../../img/cover_Pierredemaere.png";
+import rectangle1 from "../../img/coverDeluxe.png";
 import poster from "../../img/PosterVioletFINALE.png";
 import pull from "../../img/Purple Hoodie Back.png";
 import pull1 from "../../img/Purple Hoodie Front.png";
@@ -18,6 +18,8 @@ import maere from "../../img/Logo Noir.png";
 import video from "../../img/video.gif";
 import { Link } from "react-router-dom";
 import tik from "../../img/tiktok.png";
+import disque from "../../img/ribbon_roll_pierredemaere.png";
+import disque1 from "../../img/ribbon_roll_PierredemaereDeluxe.png";
 
 import Panier from "../../panier/panier";
 import Identification from "../../identifiant/Identifiant";
@@ -83,6 +85,10 @@ const Artiste = () => {
               <figure className="rectangle">
                 <img src={rectangle} alt="/" />
               </figure>
+              <figure className="disquette">
+                <img src={disque} alt="/" />
+              </figure>
+
               <article className="span">
                 <span> cd "Regarde-Moi" Edition </span>
                 <span>standard</span>
@@ -96,6 +102,10 @@ const Artiste = () => {
               <figure className="rectangle1">
                 <img src={rectangle1} alt="" />
               </figure>
+              <figure className="disquette">
+                <img src={disque1} alt="/" />
+              </figure>
+
               <article className="span">
                 <span> cd "Regarde-Moi" Edition</span>
                 <span className="limité"> limitée</span>
@@ -162,10 +172,7 @@ const Artiste = () => {
 
             <article className="disque">
               <figure className="fifth">
-                <img src={rectangle} alt="" />
-              </figure>
-              <figure className="six">
-                <img src={rectangle} alt="" />
+                <img src={rectangle1} alt="" />
               </figure>
             </article>
             <section className="mini-shop">
@@ -204,32 +211,31 @@ const Artiste = () => {
             </section>
           </section>
           <section className="bloc-2">
-            <h1>
-              Pack 2 Hoodies + 2 <br /> Cd
-            </h1>
+            <h1>Pack 2 Hoodies + 2 Cd</h1>
             <span>64,99€</span>
             <article className="case">
               <div>
                 <p>XS</p>
               </div>
               <div>
-                <p>S</p>
+                <p className="police">S</p>
               </div>
               <div>
-                <p>M</p>
+                <p className="police">M</p>
               </div>
               <div>
-                <p>M</p>
+                <p className="police">L</p>
               </div>
               <div>
                 <p>XL</p>
               </div>
             </article>
-
             <button>Ajouter au panier</button>
-            <p>- Les deux éditions de "Regarde-Moi", titres bonus inclus</p>
-            <p>- Un Hoodie spécial tournée, coupe oversize</p>
-            <p>- Un Hoodie spécial “Regarde-Moi”, coupe oversize</p>
+            <article className="paragraphe">
+              <p>- Les deux éditions de "Regarde-Moi", titres bonus inclus</p>
+              <p>- Un Hoodie spécial tournée, coupe oversize</p>
+              <p>- Un Hoodie spécial “Regarde-Moi”, coupe oversize</p>
+            </article>
           </section>
         </section>
         <section className="musique">
@@ -249,18 +255,14 @@ const Artiste = () => {
             <Link to="https://www.instagram.com/pierredemaere/#">
               <img src={instagram} alt="image" />
             </Link>
-            <Link to="https://www.youtube.com/channel/UCjVf7nuElkyqZyxP-HY5dLw">
-              {" "}
-              <img src={youtube} alt="image" />{" "}
-            </Link>
+
             <Link to="https://twitter.com/iamdonmcqueen?s=20">
               {" "}
               <img src={twitter} alt="image" />
             </Link>
             <img src={facebook} alt="image" />
-            
+
             <img src={tik} alt="" />
-          
           </figure>
         </article>
         <figure className="logo-footer">
