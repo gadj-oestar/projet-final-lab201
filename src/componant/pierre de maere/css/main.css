@@ -398,9 +398,13 @@ article button {
     flex-direction: row;
     align-items: center;
     margin-left: -13px;
+}
 
-
-
+.nano {
+    display: block;
+    font-size: 0.7rem;
+    margin-left: 63px !important;
+    margin-top: 0px !important;
 }
 
 .case div p {
@@ -415,6 +419,10 @@ article button {
 
 .police {
     margin-left: 4.6px !important;
+}
+
+.policee {
+    margin-left: 5.6px !important;
 }
 
 

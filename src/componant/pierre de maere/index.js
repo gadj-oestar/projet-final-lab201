@@ -39,8 +39,6 @@ const Artiste = () => {
   const [box3, setBox3] = useState(false);
   const [box4, setBox4] = useState(false);
 
- 
-
   const check = () => {
     setBox(true);
     setBox1(false);
@@ -92,7 +90,6 @@ const Artiste = () => {
               <img src={connexion} alt="" onClick={open} />
             </figure>
             <Identification />
-
             <figure>
               <img src={pngegg} alt="" onClick={open_cart} />
             </figure>
@@ -151,7 +148,10 @@ const Artiste = () => {
 
               <article className="span">
                 <span> cd "Regarde-Moi" Edition</span>
-                <span className="limité"> limitée</span>
+                <span className="limité">
+                  {" "}
+                  de luxe <span className="nano">(cd+Vinyle+exclusif)</span>
+                </span>
               </article>
               <article className="spane">
                 <span>19,99€</span>
@@ -215,7 +215,7 @@ const Artiste = () => {
 
             <article className="disque">
               <figure className="fifth">
-                <img src={rectangle1} alt="" />
+                <img src={rectangle} alt="" />
               </figure>
             </article>
             <section className="mini-shop">
@@ -264,7 +264,10 @@ const Artiste = () => {
                 onClick={check1}
                 style={box1 ? { background: "black" } : null}
               >
-                <p className="police" style={!box1 ? null : { color: "white" }}>
+                <p
+                  className="policee"
+                  style={!box1 ? null : { color: "white" }}
+                >
                   S
                 </p>
               </div>
@@ -300,7 +303,10 @@ const Artiste = () => {
           </section>
         </section>
         <section className="musique">
-          <iframe src="https://open.spotify.com/embed/artist/13mm5rU1jvWfWG6uQ46ypd?utm_source=generator&theme=0" title="/"></iframe>
+          <iframe
+            src="https://open.spotify.com/embed/artist/13mm5rU1jvWfWG6uQ46ypd?utm_source=generator&theme=0"
+            title="/"
+          ></iframe>
         </section>
         <section className="inscription">
           <h2>Newsletter</h2>
